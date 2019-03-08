@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "soundsphere api",
+  "main": "index.js",
+  "repository": "https://github.com/shurygindv/soundsphere.git",
+  "author": "shurygindv <shurygindv1@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:dev": "nodemon"
+  },
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-router": "^7.0.40",
+    "nodemon": "^1.18.10",
+    "ts-lint": "^4.5.1",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.3333"
+  }
+}
