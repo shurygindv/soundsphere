@@ -21,10 +21,6 @@ export abstract class HttpResult {
   constructor (message: string) {
     this.message = message;
   }
-
-  end () {
-    throw new Error("Not implemented yet");
-  }
 }
 
 class HttpSuccessResult<T> extends HttpResult {
@@ -36,7 +32,7 @@ class HttpSuccessResult<T> extends HttpResult {
     this.data = data;
   }
 
-  valueOf () {
+  valueOf (): ResponseResult<T> {
     return {
       Data: this.data,
       Success: false,

@@ -6,7 +6,5 @@ export const init = (userService: IUserService): Router => {
   const router: Router = new Router();
 
 
-    
-
   return router;
 };

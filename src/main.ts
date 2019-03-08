@@ -6,7 +6,9 @@ import { bootstrap } from './bootstrapper';
 import { errorMiddleware } from './middlewares/error-middleware';
 
 const createApplication = (): Koa => new Koa();
-const createAppRouter = (): Router => new Router();
+const createAppRouter = (): Router => new Router({
+    prefix: '/api/v1'
+});
 
 const app = createApplication();
 const router = createAppRouter();
