@@ -12,11 +12,13 @@
   },
   "dependencies": {
     "koa": "^2.7.0",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "ramda": "^0.26.1"
   },
   "devDependencies": {
     "@types/koa": "^2.0.48",
     "@types/koa-router": "^7.0.40",
+    "@types/ramda": "^0.25.51",
     "nodemon": "^1.18.10",
     "ts-lint": "^4.5.1",
     "ts-node": "^8.0.3",
