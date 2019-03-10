@@ -11,6 +11,9 @@
     "start:dev": "nodemon"
   },
   "dependencies": {
+    "apollo-server-koa": "^2.4.8",
+    "graphql": "^14.1.1",
+    "graphql-tools": "^4.0.4",
     "koa": "^2.7.0",
     "koa-router": "^7.4.0",
     "ramda": "^0.26.1"
