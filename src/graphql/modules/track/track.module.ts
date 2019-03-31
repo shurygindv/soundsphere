@@ -1,6 +1,6 @@
 import { GraphQLModule } from '@graphql-modules/core';
 
-import * as typeDefs from './track.scheme.graphql';
+import * as typeDefs from './track.typedefs.graphql';
 import { TrackService } from './track.service';
 
 export const TrackModule = new GraphQLModule({
