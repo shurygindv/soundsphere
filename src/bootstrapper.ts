@@ -1,7 +1,7 @@
 import { GraphQLModule } from '@graphql-modules/core';
 import { ApolloServer } from 'apollo-server';
 
-import { environment } from './config';
+import { serverOptions } from './config';
 
 export const bootstrap = async (module: GraphQLModule<any, any, any>) => {
   const server = new ApolloServer({
@@ -10,7 +10,7 @@ export const bootstrap = async (module: GraphQLModule<any, any, any>) => {
       introspection: true,
   });
 
-  const application = await server.listen(environment.port);
+  const application = await server.listen(serverOptions.port);
 
   console.log(`Server ready at ${application.url}`);
 };
