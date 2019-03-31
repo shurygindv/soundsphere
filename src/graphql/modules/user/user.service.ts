@@ -1,7 +1,7 @@
 import {Injectable} from '@graphql-modules/di';
 import {Connection, Repository} from 'typeorm';
 
-import {UserEntity} from './../../../entities/user';
+import {UserEntity} from './../../../entity/user';
 
 @Injectable()
 export class UserService {
