@@ -6,6 +6,8 @@
       "removeComments": true,
       "noLib": false,
       "preserveConstEnums": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
       "allowSyntheticDefaultImports": true,
       "target": "es6",
       "sourceMap": true,

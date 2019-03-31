@@ -1,0 +1,7 @@
+type Track {
+  id: ID!
+  name: String
+  dataTODOTYPE: String
+  author: String
+  length: Float
+}
