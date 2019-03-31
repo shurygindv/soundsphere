@@ -1,5 +1,7 @@
 import { createConnection} from 'typeorm';
 
+import {UserEntity} from './entities/user';
+
 export const connectToDatabase = async (options: any) => {
   await createConnection({
     type: 'postgres',
@@ -10,7 +12,7 @@ export const connectToDatabase = async (options: any) => {
     database: options.database,
     synchronize: true,
     logging: false,
-    entities: ['dist/entity/**/*.js']
+    entities: [UserEntity]
   });
 
 
