@@ -1,13 +1,12 @@
 import {Injectable} from '@graphql-modules/di';
-import {Connection, Repository} from 'typeorm';
 
-import {UserEntity} from './../../../entity/user';
+import {UserEntity} from '../../../entity/user';
+import { BaseService } from '../../../core/base-service';
 
 @Injectable()
-export class UserService {
-  private repository: Repository<UserEntity>;
+export class UserService extends BaseService<UserEntity> {
 
-  constructor(connection: Connection) {
-    this.repository = connection.getRepository(UserEntity);
+  constructor() {
+    super(UserEntity);
   }
 }

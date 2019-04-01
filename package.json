@@ -14,7 +14,6 @@
     "@graphql-modules/core": "^0.4.2",
     "@types/dotenv": "^6.1.1",
     "apollo-server": "^2.4.8",
-    "dotenv": "^7.0.0",
     "graphql": "^14.1.1",
     "graphql-import-node": "^0.0.1",
     "graphql-tag": "^2.10.1",

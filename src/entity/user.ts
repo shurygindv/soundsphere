@@ -1,17 +1,19 @@
-import { Entity, Column, PrimaryColumn } from 'typeorm';
+import {Entity, Column, PrimaryColumn, BaseEntity} from 'typeorm';
 
 @Entity()
-export class UserEntity {
+export class UserEntity extends BaseEntity {
   @PrimaryColumn()
   public id: string;
 
-  @Column({ length: 100 })
+  @Column({length: 100})
   public firstName: string;
 
-  @Column({ length: 100 })
+  @Column({length: 100})
   public lastName: string;
 
   constructor(id: string, firstName: string, lastName: string) {
+    super();
+
     this.id = id;
     this.firstName = firstName;
     this.lastName = lastName;

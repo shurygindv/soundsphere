@@ -2,10 +2,6 @@ type Query {
     user(id: ID!): User
 }
 
-type Mutation {
-    
-}
-
 type User {
     id: ID!
     firstName: String!
