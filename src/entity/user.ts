@@ -1,9 +1,9 @@
-import {Entity, Column, PrimaryColumn, BaseEntity} from 'typeorm';
+import {Entity, Column, PrimaryGeneratedColumn, BaseEntity} from 'typeorm';
 
 @Entity()
 export class UserEntity extends BaseEntity {
-  @PrimaryColumn()
-  public id: string;
+  @PrimaryGeneratedColumn()
+  public id?: number;
 
   @Column({length: 100})
   public firstName: string;
@@ -11,7 +11,8 @@ export class UserEntity extends BaseEntity {
   @Column({length: 100})
   public lastName: string;
 
-  constructor(id: string, firstName: string, lastName: string) {
+  constructor (firstName: string, lastName: string);
+  constructor(firstName: string, lastName: string, id?: number) {
     super();
 
     this.id = id;
