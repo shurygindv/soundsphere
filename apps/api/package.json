@@ -1,12 +1,11 @@
 {
-  "name": "api",
+  "name": "@soundsphere/api",
   "version": "1.0.0",
-  "description": "soundsphere api",
+  "description": "[soundsphere] api",
   "main": "index.js",
   "repository": "https://github.com/shurygindv/soundsphere.git",
   "author": "shurygindv <shurygindv1@gmail.com>",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "start:dev": "nodemon"
   },
