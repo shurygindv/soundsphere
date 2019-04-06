@@ -1,7 +1,6 @@
 {
   "name": "web",
   "version": "0.1.0",
-  "namespace": true,
   "reason": {
     "react-jsx": 2
   },

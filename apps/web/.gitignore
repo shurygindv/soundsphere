@@ -1,11 +1,12 @@
-## folders
-lib
+##
 dist
+lib
+*.bs.js
 
 ## reasonml files
-*.bs.js
-*.obj
+
 *.exe
+*.obj
 *.out
 *.compile
 *.native
