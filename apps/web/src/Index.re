@@ -1,0 +1,1 @@
+let element = ReasonReact.string("It should be work!");
