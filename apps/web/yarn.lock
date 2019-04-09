@@ -3119,6 +3119,18 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+re-debouncer@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/re-debouncer/-/re-debouncer-1.0.0.tgz#74beb26756898b92a59e3fff51d1bedd4fc0ad5c"
+  integrity sha512-yVWs7VOdNVXUGAzqzQswL/VXfwsE4UbZ8CNA7uRWydNKjINIvyDdbm047w3nAJH63ysvVywwKmXz0lY7M9tOuQ==
+
+re-formality@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/re-formality/-/re-formality-1.2.0.tgz#a980052035e4d0568b6594e19a08bdfe944d1b04"
+  integrity sha512-6VewjH1L3EB1tBEAkXOBNoaV16MWs5i72OcVGnEXPAP7HVxc7l0LfAerY34x5jxtVd8xeeYOUGxf1wf48MLqQA==
+  dependencies:
+    re-debouncer "1.0.0"
+
 react-dom@>=16.8.1, react-dom@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
